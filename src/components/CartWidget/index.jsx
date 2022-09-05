@@ -2,7 +2,7 @@ import React from 'react'
 import {HiShoppingCart} from 'react-icons/hi'
 import './styles.scss';
 
-const CarWidget = () => {
+const CartWidget = () => {
     return (
         <div className='icon-cart'>
             <p>COMPRAR <HiShoppingCart size={50}/></p>
@@ -10,4 +10,4 @@ const CarWidget = () => {
     )
 }
 
-export default CarWidget
+export default CartWidget
