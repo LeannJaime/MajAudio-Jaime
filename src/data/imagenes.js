@@ -1,0 +1,1 @@
+export const imgProdcutos = require.context('../img', true );
