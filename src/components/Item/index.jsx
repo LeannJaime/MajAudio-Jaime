@@ -1,14 +1,13 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { imgProdcutos } from '../../data/imagenes';
 
 const Item = ({product}) => {
     return (
         <>
         <div className='container'>
             <Card style={{ width: '18rem' }}>
-            <Card.Img src={imgProdcutos(`./${product.id}.jpg`)}/>
+            <Card.Img src={product.img}/>
             <Card.Body>
             <Card.Title>{product.name}</Card.Title>
             <Card.Text>{product.description}</Card.Text>
