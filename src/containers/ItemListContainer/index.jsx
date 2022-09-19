@@ -21,7 +21,7 @@ const ItemListContainer = ({greeting}) => {
         const obtenerProductos = new Promise ((accept, reject)=> {
           setTimeout(() => {
             accept(products)
-          }, 3000);
+          }, 500);
         })
   
       try {

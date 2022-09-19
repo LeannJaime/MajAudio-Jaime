@@ -1,17 +1,18 @@
 import React from 'react'
 import CartWidget from '../CartWidget';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <>
         <h1>MAJ AUDIO</h1>
         <ul>
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#productos">Productos</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    </ul>
+    <li><Link to="/">Inicio</Link></li>
+    <li><Link to="/productos">Productos</Link></li>
+    <li><Link to="*">Contacto</Link></li>
+    <li><Link to="*">Nosotros</Link></li>
+    </ul>   
     <CartWidget/>
     </> 
   )
