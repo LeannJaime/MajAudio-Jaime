@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import NotFound from './components/NotFound';
 import Home from './components/Home';
+import Cart from './containers/CartContainer';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/productos' element={<ItemListContainer/>}/>
         <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
+        <Route path='/cart' element={<Cart/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
