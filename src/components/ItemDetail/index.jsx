@@ -1,19 +1,23 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useState, useContext} from 'react'
 import ItemCount from '../ItemCount';
 import './styles.css';
 import {useNavigate} from 'react-router-dom';
+import { Shop } from '../../context/ShopProvider';
 
 const ItemDetail = ({product}) => {
 
     const [qty, setqty] = useState(0);
     const navigate = useNavigate();
 
+    const {addItem} = useContext(Shop)
+
     const addCart = (Quantity) => {
         setqty(Quantity);
     }
 
     const handleFinish = () => {
+        const productToSave = {...product, quantity: qty}
+        addItem(productToSave)
         navigate('/cart')
     }
 
@@ -27,7 +31,7 @@ const ItemDetail = ({product}) => {
         <p>${product.precio}</p>
         { !qty ? (<ItemCount stock={10} initial={1} onAdd={addCart}/>
         ) : (
-            <button onClick={handleFinish}>Finalizar compra</button>
+            <button onClick={handleFinish}>Terminar mi compra</button>
         )}
     </div>
     )

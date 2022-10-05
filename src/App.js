@@ -2,19 +2,17 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import ItemListContainer from './containers/ItemListContainer/index';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from './components/NotFound';
 import Home from './components/Home';
 import Cart from './containers/CartContainer';
+import ShopProvider from './context/ShopProvider';
 
 function App() {
 
 
   return (
+    <ShopProvider>
     <BrowserRouter>
       <NavBar/>
       <div className="App">
@@ -27,6 +25,7 @@ function App() {
         <Route path='*' element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
+    </ShopProvider>
   );
 }
 
