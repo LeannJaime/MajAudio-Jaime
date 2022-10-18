@@ -7,9 +7,15 @@ import NotFound from './components/NotFound';
 import Home from './components/Home';
 import Cart from './containers/CartContainer';
 import ShopProvider from './context/ShopProvider';
+// import { useEffect } from 'react';
+// import algoritmoGuardadoAutomatico from './services/guardarProductos';
 
 function App() {
 
+    // useEffect(() => {
+    //   console.log("Se debería ejecutar una sola vez");
+    //   algoritmoGuardadoAutomatico();
+    // }, [])
 
   return (
     <ShopProvider>

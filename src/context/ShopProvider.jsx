@@ -35,7 +35,7 @@ const ShopProvider = ({children}) => {
     }
 
     const totalPrice = () => {
-        return cart.reduce((prev, act) => prev + act.quantity * act.precio, 0);
+        return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);
     }
 
     const totalProducts = () => cart.reduce((acumulador, productoAcual) => acumulador + productoAcual.quantity, 0);
