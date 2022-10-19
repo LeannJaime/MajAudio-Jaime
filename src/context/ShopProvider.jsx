@@ -8,7 +8,6 @@ const ShopProvider = ({children}) => {
 
     const addItem = (item) => {
         const prodcutoRepetido = isInCart(item.id);
-        console.log(prodcutoRepetido);
         if (prodcutoRepetido) {
             const cartModified = cart.map(product => {
                 if (product.id === item.id){
@@ -18,8 +17,6 @@ const ShopProvider = ({children}) => {
                 return product
             })
             setCart(cartModified);
-            console.log(cartModified);
-            console.log(cart);
         } else {
             const cartModificado = [...cart, item]
             setCart(cartModificado)

@@ -21,8 +21,6 @@ const ItemDetail = ({product}) => {
         navigate('/cart')
     }
 
-    console.log(qty);
-
     return (
     <div className='detail'>
         <h1>{product.name}</h1>

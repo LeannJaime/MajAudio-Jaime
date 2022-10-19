@@ -16,8 +16,6 @@ const Cart = () => {
   const handleBuy = async () => {
     const importeTotal = totalPrice();
     const orden = ordenGenerada("Leandro", "lean.jaime", 113846545, cart, importeTotal);
-    console.log(orden);
-
     const docRef = await addDoc(collection(db, "orders"), orden);
     alert(`Orden generada, Id: ${docRef.id}`);
 

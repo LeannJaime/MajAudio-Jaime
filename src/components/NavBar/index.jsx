@@ -7,8 +7,6 @@ import { Shop } from '../../context/ShopProvider';
 const NavBar = () => {
 
   const value = useContext(Shop)
-
-  console.log(value);
   
   return (
     <>

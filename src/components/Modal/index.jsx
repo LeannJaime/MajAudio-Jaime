@@ -6,8 +6,6 @@ const Modal = ({handleClose}) => {
 
     useEffect(() => {
         const handleEsc = (event) => {
-            console.log(event);
-
             if (event.keyCode === 27) {
                 handleClose(false);
             }
@@ -28,7 +26,6 @@ const Modal = ({handleClose}) => {
 
     const handleSubmit = (event) => {
         event?.preventDefault();
-        console.log(event);
     };
 
     const onClose = () => {
