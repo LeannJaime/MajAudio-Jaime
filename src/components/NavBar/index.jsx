@@ -10,11 +10,14 @@ const NavBar = () => {
   
   return (
     <>
-        <h1>MAJ AUDIO</h1>
+    <div className='imglogo'>
+        <img src="./img/Logo.jpg" alt="logo" width={400}/>
+    </div>
         <ul>
     <li><Link to="/">Inicio</Link></li>
     <li><Link to="/productos">Productos</Link></li>
-    <li><Link to="*">Contacto</Link></li>
+    <li><Link to="/category/Subwoofers">Subwoofers</Link></li>
+    <li><Link to="/category/Parlantes">Parlantes</Link></li>
     <li><Link to="*">Nosotros</Link></li>
     <Link to="/cart"><CartWidget/></Link>
     </ul>   

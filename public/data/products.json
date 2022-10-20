@@ -13,7 +13,7 @@
         "stock": 12, 
         "price": 24999, 
         "img": "/img/2.jpg",
-        "category": "Componentes"},
+        "category": "Parlantes"},
 
         {"id": "3",
         "name": "Subwoofer Massive", 
@@ -29,6 +29,38 @@
         "stock": 12, 
         "price": 15600, 
         "img": "/img/4.jpg",
-        "category": "Medios"}
+        "category": "Parlantes"},
+
+        {"id": "5",
+        "name": "Coaxiales 6x9 Ground Zero", 
+        "description": "Coaxiales 6x9 pulg. de excelente calidad", 
+        "stock": 26, 
+        "price": 24600, 
+        "img": "/img/5.jpg",
+        "category": "Parlantes"},
+
+        {"id": "6",
+        "name": "Subwoofer 5000Wrms", 
+        "description": "Subwoofer Ground Zero de alta potencia ", 
+        "stock": 4, 
+        "price": 224999, 
+        "img": "/img/6.jpg",
+        "category": "Subwoofers"},
+
+        {"id": "7",
+        "name": "Subwoofer chato", 
+        "description": "Subwoofer chato para espacios reducidos", 
+        "stock": 10, 
+        "price": 56000, 
+        "img": "/img/7.jpg",
+        "category": "Subwoofers"},
+
+        {"id": "8",
+        "name": "Tweeter Ground Zero", 
+        "description": "Tweeter bala de alta potencia para cajas de medios", 
+        "stock": 50, 
+        "price": 19000, 
+        "img": "/img/8.jpg",
+        "category": "Parlantes"}
 
 ]

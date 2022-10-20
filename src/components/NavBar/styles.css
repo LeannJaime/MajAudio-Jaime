@@ -33,3 +33,8 @@ ul {
     text-align: center;
     padding: 10px;
   }
+
+  .imglogo{
+    display: flex;
+    justify-content: center;
+  }
